@@ -1,0 +1,14 @@
+[
+    {
+        "value1" : "Hello",
+        "value2" : "Hola"
+    },
+    {
+        "value1" : "World",
+        "value2" : "Mundo"
+    },
+    {
+        "value1" : "Cool",
+        "value2" : "Suave"
+    }
+]
