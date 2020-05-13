@@ -12,6 +12,22 @@
         to retrieve some data from a "db"<br>
         Value 1: {{query.value1}}
         Value 2: {{query.value2}}
+        <p>
+            <a href="{{url_for('welcome')}}"> Go to Welcome</a>
+            <br>
+            <button>
+            {% if index < max_index %}
+                <a href="{{ url_for('query_view', index=index + 1) }}">
+                    Next card
+                </a>
+            {% else %}
+                <a href="{{ url_for('query_view', index=0) }}">
+                    Start over
+                </a>
+            {% endif %}
+            </button>
+        </p>
     </p>
+    <a href="{{ url_for('remove_query', index=index ) }}"> Remove this data</a>
 </body>
 </html>
