@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Query</Title>
+</head>
+<body>
+    <h1>Remove data</h1>
+    value1: {{ query.value1}} <br>
+    value2: {{ query.value2}}
+
+    <form method="post">
+        <button type="submit">Remove Entry</button>
+        <a href="{{ url_for('welcome') }}"> Home  </a>
+    </form>
+</body>
+</html>
