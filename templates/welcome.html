@@ -11,9 +11,16 @@
         <em>Using Flask</em>
         an showing a jpg
     </p>
-    <img src="/static/thai.JPG">
-    <p>
-        {{message}}
-    </p>
+    <h2>Queries</h2>
+    <ul>
+        {% for query in querys %}
+        <li>
+            <a href="{{ url_for('query_view', index=loop.index0)}}">
+                {{ query.value1}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
