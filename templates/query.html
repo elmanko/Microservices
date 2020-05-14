@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Query</Title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %} Query {% endblock %}
+
+{%block content %}
     <h1>Simulating a db connection</h1>
     <p>
         This is a simple example
@@ -29,5 +27,4 @@
         </p>
     </p>
     <a href="{{ url_for('remove_query', index=index ) }}"> Remove this data</a>
-</body>
-</html>
+{% endblock %}

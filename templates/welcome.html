@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome</Title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %} Welcome {% endblock %}
+
+{%block content %}
     <h1>Welcome to this test</h1>
     <p>
         This is a simple example
@@ -21,6 +19,5 @@
         </li>
         {% endfor %}
     </ul>
-
-</body>
-</html>
+    <a href="{{url_for('add_query') }}">Add data</a>
+{% endblock %}
